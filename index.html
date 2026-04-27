@@ -82,29 +82,9 @@
                 <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
                     Ryuji <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-600">Mendoza</span>
                 </h1>
-                <p class="code-font text-lg text-slate-600 font-medium mb-8 bg-slate-100/50 inline-block px-3 py-1 rounded-lg border border-slate-200">
+                <p class="code-font text-lg text-slate-600 font-medium mb-10 bg-slate-100/50 inline-block px-3 py-1 rounded-lg border border-slate-200">
                     > Python Developer | Machine Learning | Data Analytics
                 </p>
-                
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 relative mb-8 hover:shadow-md transition-shadow">
-                    <div class="absolute top-0 left-0 w-1.5 h-full bg-brand-600 rounded-l-2xl"></div>
-                    <div id="pitch-container" class="space-y-4 text-slate-700 leading-relaxed text-base">
-                        <p>
-                            I am a data-driven problem solver transitioning from the biological sciences into AI and Machine Learning. To deepen my theoretical foundation, I am currently preparing to study Mathematics in Computer Applications. As a recent graduate, I bring a hunger for hands-on experience and a proven track record of teaching myself how to build practical, end-to-end software solutions from scratch.
-                        </p>
-                        <div id="extended-pitch" class="hidden space-y-4 fade-in pt-2">
-                            <p>
-                                I focus on learning by doing. Using <strong class="text-slate-900">Python, PyTorch, XGBoost, and Pandas</strong>, I have independently engineered an automated algorithmic trading pipeline that combines deep learning with NLP sentiment analysis. I have also solved massive real-world data-entry bottlenecks by writing automation scripts that parse messy Excel data and programmatically typeset entire books into formatted Word documents.
-                            </p>
-                            <p>
-                                My non-traditional background means I view programming strictly as a tool to solve actual problems. Whether it requires cleaning raw datasets, integrating LLMs, or building predictive models, I know how to translate data into tangible value. I am actively seeking projects, freelance work, and roles where I can contribute my current skills while continuing to grow as a developer.
-                            </p>
-                        </div>
-                        <button onclick="togglePitch()" id="toggle-btn" class="text-brand-600 font-bold text-sm flex items-center gap-1 hover:text-brand-800 transition-colors mt-4 tracking-wide uppercase">
-                            [+] Read Full Pitch
-                        </button>
-                    </div>
-                </div>
 
                 <div class="flex flex-wrap gap-4">
                     <a href="mailto:ryujiwatanabe6@gmail.com" class="flex items-center gap-2 text-white bg-slate-900 hover:bg-brand-600 transition-colors px-6 py-3 rounded-lg shadow-sm font-medium text-sm">
@@ -125,8 +105,8 @@
                     </div>
                     <h2 class="text-2xl font-bold text-slate-900 tracking-tight">Works & Projects</h2>
                 </div>
-                <a href="#" class="text-sm font-medium text-brand-600 hover:text-brand-800 flex items-center gap-1 transition-colors">
-                    View Google Colab <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                <a href="https://github.com/theboredgen-z" target="_blank" class="text-sm font-medium text-brand-600 hover:text-brand-800 flex items-center gap-1 transition-colors">
+                    View GitHub <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
             </div>
             
@@ -173,21 +153,6 @@
                             </div>
                         </div>
 
-                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-slate-100 group-hover:bg-brand-100 text-slate-500 group-hover:text-brand-600 shadow-sm shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-colors z-10">
-                                <i data-lucide="database" class="w-4 h-4"></i>
-                            </div>
-                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 gap-2">
-                                    <h3 class="font-bold text-slate-900 text-lg leading-tight">Data & Medical Asst.</h3>
-                                    <span class="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-1 rounded-md shrink-0">2021 - 2022</span>
-                                </div>
-                                <div class="text-xs font-mono text-slate-500 mb-4">The Medical Brothers Testing</div>
-                                <p class="text-sm text-slate-600 leading-relaxed">
-                                    Managed large datasets of patient risk profiles and medical histories. Ensured data integrity across screening pipelines, optimizing scheduling algorithms for home-based urgent screenings.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -244,7 +209,7 @@
                 title: "Forex Market Analyzer & Predictor",
                 tech: ["PyTorch (LSTM)", "XGBoost", "FinBERT", "Pandas", "numpy", "yfinance"],
                 desc: "A hybrid ML model using PyTorch LSTMs and XGBoost to predict currency trends, integrated with real-time FinBERT sentiment analysis.",
-                linkText: "View Colab Notebook",
+                linkText: "View Repository",
                 link: "https://github.com/theboredgen-z/Yuji-s-ForEx-ML-Pipeline",
                 icon: "line-chart"
             },
@@ -252,8 +217,8 @@
                 title: "Lannang Automated Typesetting Compiler System",
                 tech: ["Python", "Pandas", "openpyxl", "python-docx", "Regex"],
                 desc: "An automation pipeline that programmatically compiles 10,000+ dictionary entries from Excel to production-ready Word documents.",
-                linkText: "View Colab Script",
-                link: "https://github.com/theboredgen-z/Automated-Lannang-Typesetting-Script"
+                linkText: "View Repository",
+                link: "https://github.com/theboredgen-z/Automated-Lannang-Typesetting-Script",
                 icon: "file-code-2"
             }
         ];
@@ -288,7 +253,7 @@
                     ${proj.tech.map(t => `<span class="px-2 py-1 bg-slate-100 text-slate-600 text-[10px] font-mono rounded-md border border-slate-200">${t}</span>`).join('')}
                 </div>
                 <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">${proj.desc}</p>
-                <a href="#" class="inline-flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-800 transition-colors mt-auto">
+                <a href="${proj.link || '#'}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-800 transition-colors mt-auto">
                     ${proj.linkText} <i data-lucide="external-link" class="w-4 h-4"></i>
                 </a>
             `;
@@ -327,21 +292,6 @@
         });
 
         // --- INTERACTION SECTION ---
-
-        // Pitch Toggle
-        function togglePitch() {
-            const extended = document.getElementById('extended-pitch');
-            const btn = document.getElementById('toggle-btn');
-            const isHidden = extended.classList.contains('hidden');
-            
-            if (isHidden) {
-                extended.classList.remove('hidden');
-                btn.innerHTML = '[-] Show Less';
-            } else {
-                extended.classList.add('hidden');
-                btn.innerHTML = '[+] Read Full Pitch';
-            }
-        }
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', () => {
